@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; 
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    border: 2px dashed #d08906;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+  }
+
+  img {
+    cursor: grab;
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */
+    transition: width 0.2s ease, height 0.2s ease;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    display: block;
+  }
+
+  /* Highlight effect */
+  img.highlight {
+    border: 3px solid #ff6347;  /* Tomato color border */
+    opacity: 0.8;  /* Slight transparency to show it's highlighted */
+  }
+
+  /* Resize handle at bottom right of image */
+  .resize-handle {
+    width: 15px;
+    height: 15px;
+    background-color: #d08906;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: se-resize;
+  }
